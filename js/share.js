@@ -9,6 +9,12 @@ function setShare() {
   const shareImage = url + 'img/lv' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
+  console.log(`resultImg(결과 이미지) = ${resultImg}`);
+  console.log(`resultAlt(결과 인덱스) = ${resultAlt}`);
+  console.log(`shareDes(결과 설명) = ${shareDes}`);
+  console.log(`shareImage(결과 이미지) = ${shareImage}`);
+  console.log(`shareURL = ${shareURL}`);
+
     Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
@@ -34,6 +40,7 @@ function setShare() {
 }
 
 // 이미지 링크 안먹어서 수정 필요
+/*
 function kakaoShare() {
   Kakao.Link.sendDefault({
   objectType: 'feed',
@@ -56,3 +63,4 @@ function kakaoShare() {
   ]
 });
 }
+*/
