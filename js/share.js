@@ -9,6 +9,7 @@ function setShare() {
   const shareImage = url + 'img/lv' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
+  // 최종때는 콘솔 로그 삭제 후 커밋/푸시 필요
   console.log(`resultImg(결과 이미지) = ${resultImg}`);
   console.log(`resultAlt(결과 인덱스) = ${resultAlt}`);
   console.log(`shareDes(결과 설명) = ${shareDes}`);
@@ -39,6 +40,7 @@ function setShare() {
 
 }
 
+// 아래 코드도 최종때는 삭제 필요
 // 이미지 링크 안먹어서 수정 필요
 /*
 function kakaoShare() {
