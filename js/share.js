@@ -33,7 +33,6 @@ function setShare() {
 
 }
 
-/*
 // 이미지 링크 안먹어서 수정 필요
 function kakaoShare() {
   Kakao.Link.sendDefault({
@@ -57,4 +56,3 @@ function kakaoShare() {
   ]
 });
 }
-*/
