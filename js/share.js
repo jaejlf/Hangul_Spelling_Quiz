@@ -1,4 +1,4 @@
-/*
+
 const url = 'https://jaejlf.github.io/Hanguel-Spelling-Test/';
 
 function setShare() {
@@ -33,8 +33,9 @@ function setShare() {
   });
   }
 }
-*/
 
+/*
+// 이미지 링크 안먹어서 수정 필요
 function kakaoShare() {
   Kakao.Link.sendDefault({
   objectType: 'feed',
@@ -57,3 +58,4 @@ function kakaoShare() {
   ]
 });
 }
+*/
