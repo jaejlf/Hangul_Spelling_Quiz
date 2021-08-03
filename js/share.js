@@ -41,15 +41,14 @@ function kakaoShare() {
   content: {
     title: '한국어능력고사',
     description: '맞춤법 테스트로 알아보는 나의 한국어 실력은?',
-    imageUrl:
-      'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+    imageUrl: '../img/Hanguel-Spelling-Test.png',
     link: {
-      mobileWebUrl: 'https://developers.kakao.com'
+      mobileWebUrl: 'https://jaejlf.github.io/Hanguel-Spelling-Test/'
     },
   },
   buttons: [
     {
-      title: '버튼,,',
+      title: '나도 풀어보기',
       link: {
         mobileWebUrl: 'https://jaejlf.github.io/Hanguel-Spelling-Test/',
         webUrl: 'https://jaejlf.github.io/Hanguel-Spelling-Test/'
