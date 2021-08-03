@@ -9,7 +9,6 @@ function setShare() {
   const shareImage = url + 'img/lv' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
-  function kakaoShare() {
     Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
@@ -31,7 +30,7 @@ function setShare() {
       }
     ]
   });
-  }
+
 }
 
 /*
