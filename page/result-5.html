@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" idr="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="집현전-김민지/김은진/손재정/정한솔">
+	<meta name="keywords" content="한국어능력고사">
+	<meta name="description" content="한국어능력고사">
+
+	<!-- sns share -->
+	<meta property="og:url" content="https://github.com/jaejlf/Hanguel-Spelling-Test" />
+	<meta property="og:title" content="한국어능력고사" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="한국어능력고사" />
+
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+  
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/korea1.ico">
+	<link rel="apple-touch-icon-precomposed" href="img/korea1.ico">
+
+	<title>한국어능력고사</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/result.css">
+	<script src="https://developers.kakao.com/sdk/js/kakao.js">
+	</script>
+	<script>
+		Kakao.init('4b78306c2806c638eb2beb5301da89ef');
+    Kakao.isInitialized();
+	</script>
+  </head>
+  <body>
+    <section id="shareResult" class="resultfont mx-auto mt-5 mb-5 py-5 px-3">
+      <!-- 결과지 작성할 때, 플랫티콘 저작권 작성 하기 + 제작자 작성 하기 -->
+      <h3>당신의 결과는?</h3>
+      <div class="resultname">
+        <p>5단계. 세종대왕</p>
+      </div>
+      <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+        <img src="../img/lv5.png" alt="0" class="img-fluid>
+      </div>
+      <div class="resultDesc">
+        <p>• 빰빠라빠빰~ 만점입니다! <br>• 걸어다니는 국어사전이라고해도 손색이 없을 것 같아요!<br>• 한글을 창제하신 세종대왕님께서 기뻐하실 것 같네요. <br>• 당신은 전생에 집현전 학자였을 수도..? <br>• 앞으로도 당신의 완벽한 맞춤법 구사를 응원합니다!</p>
+      </div>
+      <button type="button" class="again mt-3 py-2 px-3" onclick="js:again()">다시하기</button>
+      <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:kakaoShare()">카카오톡으로 공유하기</button>
+      <button type="button" class="again mt-3 py-2 px-3" onclick="js:again()">링크 공유하기</button>
+    </section>
+  </body>
+</html>

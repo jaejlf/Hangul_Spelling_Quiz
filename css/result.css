@@ -1,0 +1,51 @@
+.resultfont{
+  font-family: 'BinggraeSamanco','WandohopeB', sans-serif;
+}
+
+#result {
+  display: none;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 90%;
+  border-radius: 20px;
+}
+
+#shareResult {
+  text-align: center;
+  background-color: whitesmoke;
+  width: 90%;
+  border-radius: 20px;
+}
+
+#resultimg{
+  width: 200px;
+  height: 200px;
+}
+.resultname {
+  font-size: 2.1em;
+}
+
+.resultDesc {
+  font-size: 1.4em;
+}
+
+.kakao {
+  color: white;
+  background-color: #ffE500;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.again {
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.kakao:hover, .kakao:focus {
+  background-color: whitesmoke;
+  color: #ffE500;
+} 
