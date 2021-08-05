@@ -135,3 +135,16 @@ function begin() {
 function again() {
   location.reload(true); //페이지 새로고침
 }
+
+function copyToClipboard(val) {
+  const t = document.createElement("textarea");
+  document.body.appendChild(t);
+  t.value = val;
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+}
+function copy() {
+  copyToClipboard('https://jaejlf.github.io/Hanguel-Spelling-Test/');
+  console.log('복사되었습니다!');
+}
