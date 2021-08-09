@@ -18,14 +18,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom : 1%
 }
 
 .answerList {
   background-color: whitesmoke;
   border-radius: 20px;
   display: block;
+<<<<<<< HEAD
   width:100%;
   max-width: 700px;
+=======
+  width: 90%;
+>>>>>>> 1376e6b68cef0e4ef7de27b58c5b0bc3b18826e7
   border: 0px;
   font-size: 20px;
 }
@@ -37,7 +42,11 @@
 
 .status {
   height: 15px;
+<<<<<<< HEAD
   max-width: 700px;
+=======
+  width: 90%;
+>>>>>>> 1376e6b68cef0e4ef7de27b58c5b0bc3b18826e7
   background-color: whitesmoke;
   border-radius: 20px;
 }

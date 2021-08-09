@@ -147,5 +147,9 @@ function copyToClipboard(val) {
 }
 function copy() {
   copyToClipboard('https://jaejlf.github.io/Hanguel-Spelling-Test/');
+<<<<<<< HEAD
   alert('링크가 복사되었습니다!');
+=======
+  console.log('복사되었습니다!');
+>>>>>>> 1376e6b68cef0e4ef7de27b58c5b0bc3b18826e7
 }
