@@ -1,10 +1,6 @@
 .resultfont{
   font-family: 'BinggraeSamanco','WandohopeB', sans-serif;
-<<<<<<< HEAD
-  font-size: 17px
-=======
-  font-size: 16px;
->>>>>>> 1376e6b68cef0e4ef7de27b58c5b0bc3b18826e7
+  font-size: 17px;
 }
 
 #result {
@@ -28,24 +24,11 @@
   border-radius: 20px;
 }
 
-<<<<<<< HEAD
 #again{
   margin-left: auto;
   margin-right: auto;
 }
 
-=======
-#resultimg{
-  width: 5%;
-  height: 5%;
-}
-
-#again{
-  margin-left: auto;
-  margin-right: auto;
-}
-
->>>>>>> 1376e6b68cef0e4ef7de27b58c5b0bc3b18826e7
 .resultname {
   font-size: 2.1em;
 }
