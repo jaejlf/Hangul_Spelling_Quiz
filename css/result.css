@@ -19,8 +19,9 @@
 
 #shareResult {
   text-align: center;
+  width: 95%;
+  max-width: 700px;
   background-color: whitesmoke;
-  width: 90%;
   border-radius: 20px;
 }
 
@@ -41,23 +42,38 @@
   border-radius: 20px;
 }
 
-.again {
-  color: black;
-  background-color: white;
-  font-size: 20px;
-  border: 0px;
-  border-radius: 20px;
-}
-
 .kakao:hover, .kakao:focus {
   background-color: whitesmoke;
   color: #ffE500;
 } 
 
+.again {
+  color: black;
+  background-color: white;
+  font-size: 25px;
+  width: 120px;
+  height: 50px;
+  border: 0px;
+  border-radius: 20px;
+}
 .share {
   color: black;
   background-color: gainsboro;
   font-size: 20px;
   border: 0px;
   border-radius: 20px;
+}
+
+.shareBtn{
+  background-color: bisque;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+  border: 0px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.shareBtn:hover, .shareBtn:focus {
+  background-color: #FFD498;
 }

@@ -33,3 +33,36 @@ p{
   background-color: bisque;
   color: whitesmoke;
 }
+
+#toc-content {
+  display: none;
+  font-size: 20px;
+}
+
+#toc-toggle {
+  display: block;
+  width: 150px;
+  cursor: pointer;
+  color: #2962ff;
+  font-size: 20px;
+}
+
+#toc-toggle:hover {
+  text-decoration: underline;
+}
+
+#license {
+  margin-top: 25px;
+  font-size: 17px;
+}
+
+#toc-toggle2 {
+  width: 150px;
+  cursor: pointer;
+  color: #2962ff;
+  font-size: 20px;
+}
+
+#toc-toggle2:hover {
+  text-decoration: underline;
+}

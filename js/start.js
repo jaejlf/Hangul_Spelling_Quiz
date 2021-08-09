@@ -1,7 +1,8 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 3;
+const status = document.querySelector("#statusNum");
+const endPoint = 20;
 const select = [];
 
 function calResult() {
@@ -42,20 +43,13 @@ function calResult() {
 
 function setResult(){
   let point = calResult();
-  /*const resultName = document.querySelector('.resultname');
-  resultName.innerHTML = infoList[point-1].name;*/
-
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
-  //var imgURL = 'img/lv' + point + '.png';
   var imgURL = './img/test' + point + '.png';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
   imgDiv.appendChild(resultImg);
-
-  /*const resultDesc = document.querySelector('.resultDesc');
-  resultDesc.innerHTML = infoList[point-1].desc;*/
 }
 
 function goResult() {
@@ -107,8 +101,12 @@ function goNext(qIdx) {
     goResult();
     return;
   }
+  
   var q = document.querySelector(".qBox");
+  var index = document.querySelector(".statusNum");
+
   q.innerHTML = qnaList[qIdx].q;
+  index.innerHTML = qIdx + 1 + " / 20";
 
   for (let i in qnaList[qIdx].a) {
     addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
@@ -134,7 +132,7 @@ function begin() {
 }
 
 function again() {
-  location.reload(true); //페이지 새로고침
+  location.href = "https://jaejlf.github.io/Hanguel-Spelling-Test/"; 
 }
 
 function copyToClipboard(val) {
@@ -145,7 +143,18 @@ function copyToClipboard(val) {
   document.execCommand('copy');
   document.body.removeChild(t);
 }
+
 function copy() {
   copyToClipboard('https://jaejlf.github.io/Hanguel-Spelling-Test/');
   alert('링크가 복사되었습니다!');
+}
+
+function openCloseToc() {
+  if (document.getElementById('toc-content').style.display === 'block') { 
+      document.getElementById('answer').textContent = '정답 보기';
+      document.getElementById('toc-content').style.display = 'none';
+  } else {
+      document.getElementById('answer').textContent = '닫기';
+      document.getElementById('toc-content').style.display = 'block';
+  }
 }

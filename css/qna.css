@@ -46,10 +46,17 @@
 .statusBar {
   height: 100%;
   border-radius: 25px;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6e6b4+0,ed9017+100;Yellow+3D+%231 */
-  background: #f6e6b4; /* Old browsers */
-  background: -moz-linear-gradient(top,  #f6e6b4 0%, #ed9017 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #f6e6b4 0%,#ed9017 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #f6e6b4 0%,#ed9017 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
+  background: #f6e6b4;
+  background: -moz-linear-gradient(top,  #f6e6b4 0%, #ed9017 100%); 
+  background: -webkit-linear-gradient(top,  #f6e6b4 0%,#ed9017 100%);
+  background: linear-gradient(to bottom,  #f6e6b4 0%,#ed9017 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 );
+}
+
+.statusNum{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
