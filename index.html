@@ -14,13 +14,9 @@
 	<meta property="og:url" content="https://jaejlf.github.io/Hanguel-Spelling-Test/" />
 	<meta property="og:title" content="한국어능력고사" />
 	<meta property="og:type" content="website" />
-	<meta property="og:description" content="한국어능력고사" />
+	<meta property="og:description" content="맞춤법 테스트로 알아보는 나의 한국어 실력은?" />
+  <meta property="og:image" content="img/Hanguel-Spelling-Test.png" />
 
-	<!--font-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-  
 	<!-- favicon -->
 	<link rel="shortcut icon" href="img/korea1.ico">
 	<link rel="apple-touch-icon-precomposed" href="img/korea1.ico">
@@ -39,28 +35,35 @@
 		Kakao.init('4b78306c2806c638eb2beb5301da89ef');
     Kakao.isInitialized();
 	</script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DMXD1KV1W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7DMXD1KV1W');
+  </script>
 </head>
 
 <body>
 	<div class="container">
-		<section id="main" class="mainfont mx-auto mt-5 mb-5 py-5 px-3">
-			<b><h2>한국어능력고사</h2></b><br>
-      <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-        <img src="./img/lv5.png" alt="mainImage" class="img-fluid" width="40%", height="40%">
+		<section id="main" class="mainfont mx-auto my-5 py-4 px-3">
+			<div id="titlefont">한국어능력고사</div>
+        <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img id="mainImg" src="./img/lv5.png" alt="mainImage" class="img-fluid" width="45%", height="40%">
       </div>
-      <p>
-        <br>
+      <p id="subfont">
         맞춤법 테스트로 알아보는 <br>
         나의 한국어 실력은?
       </p>
-      <button type="button" class="mainfont btn btn-light" onclick="js:begin()">시작하기</button>
-      <p>
-        <br>
+      <button type="button" class="startBtn mx-auto" onclick="js:begin()" >시작하기</button>
+      <p id="tagfont">
         #맞춤법 #20문제 #5단계
       </p>
     </section>
   
-    <section id="qna" class="resultfont mx-auto mt-5 mb-5 py-5 px-3">
+    <section id="qna" class="qnafont mx-auto my-5 py-4 px-3">
       <div class="status mx-auto mt-2">
         <div class="statusBar">
         </div>
@@ -68,43 +71,60 @@
       <table align="center" style="width: 100%">
         <tr>
           <td>
-            <div class="qBox my-5 my-5 py-3 mx-auto">
+            <div class="qBox my-5 my-5 py-3 mb-2 mx-auto">
 
             </div>
           </td>
         </tr>
       </table>
-      <!-- <div class="qBox my-5 my-5 py-3 mx-auto">
 
-      </div> -->
       <div class="answerBox">
-
       </div>
     </section>
   
-    <section id="result" class="resultfont mx-auto mt-5 mb-5 py-5 px-3">
+    <section id="result" class="resultfont mx-auto my-5 py-4 px-3">
       <!-- 결과지 작성할 때, 플랫티콘 저작권 작성 하기 + 제작자 작성 하기 -->
-      <h3>당신의 결과는?</h3>
-      <div class="resultname">
 
+      <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+      </div>
+
+      <!--
+      <h3>당신의 결과는?</h3> 
+      <div class="resultname">
       </div>
       <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
       </div>
       <div class="resultDesc">
-      </div>
-      <button type="button" class="again mt-3 py-2 px-3" onclick="js:again()">다시하기</button>
+      </div>-->
+
+      <button id="again" type="button" class="again mt-3 py-2 px-3" onclick="js:again()">다시하기</button>
+      <br>
 
     <!--
       // 이 코드도 최종때는 삭제 필요
       <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:kakaoShare()">카카오톡으로 공유하기</button>
     -->
 
-      <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">카카오톡으로 공유하기</button>
+      <!-- <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">카카오톡으로 공유하기</button>
+      -->
+      <img id="shareImg" src="./img/kakaotalk.png" onclick="js:setShare()">
 
-      <button type="button" class="again mt-3 py-2 px-3" onclick="js:again()">링크 복사</button>
+      <!--
+      <a href="javascript:shareFacebook()"><button type="button" class="share mt-3 py-2 px-3">페이스북으로 공유하기</button></a>
+      -->
 
+      <img id="shareImg" src="./img/facebook.png" onclick="js:shareFacebook()"/>
+      <!--
+        <a href="javascript:shareTwitter()"><button type="button" class="share mt-3 py-2 px-3">트위터로 공유하기</button></a>
+      -->
+      
+      <img id="shareImg" src="./img/twitter.png" onclick="js:shareTwitter()"/>
 
-</script>
+      <!--<button type= "button" class="share mt-3 py-2 px-3"  onclick="js:copy()">링크 복사</button>
+      -->
+      
+      <img id="shareImg" src="./img/link.png" onclick="js:copy()"/>
+
     </section>
   </div>
   <script src="./js/data.js" charset="UTF-8"></script>

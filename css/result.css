@@ -1,13 +1,20 @@
 .resultfont{
   font-family: 'BinggraeSamanco','WandohopeB', sans-serif;
+  font-size: 17px
 }
 
 #result {
   display: none;
   text-align: center;
+  width: 95%;
+  max-width: 700px;
   background-color: whitesmoke;
-  width: 90%;
   border-radius: 20px;
+}
+
+#resultImg{
+  width: 100%;
+  max-width: 450px;
 }
 
 #shareResult {
@@ -17,20 +24,17 @@
   border-radius: 20px;
 }
 
-#resultimg{
-  width: 200px;
-  height: 200px;
+#again{
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .resultname {
   font-size: 2.1em;
 }
 
-.resultDesc {
-  font-size: 1.4em;
-}
-
 .kakao {
-  color: white;
+  color: #ffffff;
   background-color: #ffE500;
   font-size: 20px;
   border: 0px;
@@ -49,3 +53,11 @@
   background-color: whitesmoke;
   color: #ffE500;
 } 
+
+.share {
+  color: black;
+  background-color: gainsboro;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+}

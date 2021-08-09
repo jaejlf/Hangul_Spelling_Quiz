@@ -37,7 +37,6 @@ function setShare() {
       }
     ]
   });
-
 }
 
 // 아래 코드도 최종때는 삭제 필요
@@ -66,3 +65,10 @@ function kakaoShare() {
 });
 }
 */
+
+function shareFacebook() {
+    window.open("http://www.facebook.com/share.php?u=" + encodeURIComponent(location.href));
+}
+function shareTwitter() {
+    window.open("http://twitter.com/share?url=" + encodeURIComponent(location.href) +"&text=" + document.title);
+}

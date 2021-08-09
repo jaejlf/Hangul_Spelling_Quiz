@@ -29,6 +29,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/qna.css">
 	<link rel="stylesheet" href="../css/animation.css">
 	<link rel="stylesheet" href="../css/result.css">
 	<script src="https://developers.kakao.com/sdk/js/kakao.js">
@@ -40,7 +42,7 @@
 </head>
 
   <body>
-    <section id="shareResult" class="resultfont mx-auto mt-5 mb-5 py-5 px-3">
+    <section id="result" class="resultfont mx-auto mt-5 mb-5 py-5 px-3">
       <!-- 결과지 작성할 때, 플랫티콘 저작권 작성 하기 + 제작자 작성 하기 -->
       <h3>당신의 결과는?</h3>
       <div class="resultname">
@@ -55,13 +57,16 @@
 
       <script type="text/javascript">
         function moveHome(){
-          location.href = "/index.html";
+          location.href = "https://jaejlf.github.io/Hanguel-Spelling-Test/";
         }
       </script>
 
       <button type="button" class="again mt-3 py-2 px-3" onclick="js:moveHome()">나도 해보기</button>
       <button type="button" class="again mt-3 py-2 px-3" onclick="js:moveHome()">링크 공유하기</button>
-      
+
     </section>
+  <script src="./js/data.js" charset="UTF-8"></script>
+  <script src="./js/start.js" charset="UTF-8"></script>
+  <script src="./js/share.js" charset="UTF-8"></script>
   </body>
 </html>

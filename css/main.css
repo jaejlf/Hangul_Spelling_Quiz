@@ -1,3 +1,35 @@
 #main{
   text-align: center;
 }
+
+p{
+  margin-top: 30px;
+}
+
+#titlefont{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#subfont{
+  font-size: 20px;
+}
+
+#tagfont{
+  font-size: 18px;
+}
+
+.startBtn {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  display: block;
+  width: 250px;
+  height: 50px;
+  border: 0px;
+  font-size: 20px;
+}
+
+.startBtn:hover, .startBtn:focus{
+  background-color: bisque;
+  color: whitesmoke;
+}

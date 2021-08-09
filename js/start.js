@@ -1,7 +1,7 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
-const endPoint = 2;
+const endPoint = 3;
 const select = [];
 
 function calResult() {
@@ -42,19 +42,20 @@ function calResult() {
 
 function setResult(){
   let point = calResult();
-  const resultName = document.querySelector('.resultname');
-  resultName.innerHTML = infoList[point-1].name;
+  /*const resultName = document.querySelector('.resultname');
+  resultName.innerHTML = infoList[point-1].name;*/
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
-  var imgURL = 'img/lv' + point + '.png';
+  //var imgURL = 'img/lv' + point + '.png';
+  var imgURL = './img/test' + point + '.png';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
   imgDiv.appendChild(resultImg);
 
-  const resultDesc = document.querySelector('.resultDesc');
-  resultDesc.innerHTML = infoList[point-1].desc;
+  /*const resultDesc = document.querySelector('.resultDesc');
+  resultDesc.innerHTML = infoList[point-1].desc;*/
 }
 
 function goResult() {
@@ -134,4 +135,17 @@ function begin() {
 
 function again() {
   location.reload(true); //페이지 새로고침
+}
+
+function copyToClipboard(val) {
+  const t = document.createElement("textarea");
+  document.body.appendChild(t);
+  t.value = val;
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+}
+function copy() {
+  copyToClipboard('https://jaejlf.github.io/Hanguel-Spelling-Test/');
+  alert('링크가 복사되었습니다!');
 }
