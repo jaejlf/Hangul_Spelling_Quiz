@@ -24,10 +24,10 @@ function calResult() {
 
   console.log(pointArray[0].value); //맞힌 개수 체크
 
-  if(pointArray[0].value >= 0 && pointArray[0].value <= 5){
+  if(pointArray[0].value >= 0 && pointArray[0].value <= 7){
     return 1;
   }
-  else if(pointArray[0].value >= 6 && pointArray[0].value <= 12){
+  else if(pointArray[0].value >= 8 && pointArray[0].value <= 12){
     return 2;
   }
   else if(pointArray[0].value >= 13 && pointArray[0].value <= 16){

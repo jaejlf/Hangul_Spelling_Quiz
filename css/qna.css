@@ -18,7 +18,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom : 1%
+  margin-bottom : 1%;
+  padding : 5%;
 }
 
 .answerList {

@@ -8,13 +8,6 @@ function setShare() {
   const shareImage = url + 'img/lv' + resultAlt + '.png';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
-  // 최종때는 콘솔 로그 삭제 후 커밋/푸시 필요
-  console.log(`resultImg(결과 이미지) = ${resultImg}`);
-  console.log(`resultAlt(결과 인덱스) = ${resultAlt}`);
-  console.log(`shareDes(결과 설명) = ${shareDes}`);
-  console.log(`shareImage(결과 이미지) = ${shareImage}`);
-  console.log(`shareURL = ${shareURL}`);
-
     Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
@@ -22,8 +15,8 @@ function setShare() {
       description: shareDes,
       imageUrl: shareImage,
       link: {
-        mobileWebUrl: url,
-        webUrl: url
+        mobileWebUrl: shareURL,
+        webUrl: shareURL
       },
     },
     buttons: [

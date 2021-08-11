@@ -2,62 +2,63 @@
 <html lang="ko">
 
 <head>
-	<meta name="viewport" content="width=device-width">
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="집현전-김민지/김은진/손재정/정한솔">
-	<meta name="keywords" content="한국어능력고사">
-	<meta name="description" content="한국어능력고사">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="집현전-김민지/김은진/손재정/정한솔">
+    <meta name="keywords" content="한국어능력고사">
+    <meta name="description" content="한국어능력고사">
 
-	<!-- sns share -->
-	<meta property="og:url" content="https://hanguel-spelling-test.github.io/" />
-	<meta property="og:title" content="한국어능력고사" />
-	<meta property="og:type" content="website" />
-	<meta property="og:description" content="맞춤법 테스트로 알아보는 나의 한국어 실력은?" />
-	<meta property="og:image" content="img/Hanguel-Spelling-Test.png" />
+    <!-- sns share -->
+    <meta property="og:url" content="https://hanguel-spelling-test.github.io/" />
+    <meta property="og:title" content="한국어능력고사" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="맞춤법 테스트로 알아보는 나의 한국어 실력은?" />
+    <meta property="og:image" content="img/Hanguel-Spelling-Test.png" />
 
-	<!-- favicon -->
-	<link rel="shortcut icon" href="img/korea1.ico">
-	<link rel="apple-touch-icon-precomposed" href="img/korea1.ico">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/korea1.ico">
+    <link rel="apple-touch-icon-precomposed" href="img/korea1.ico">
 
-	<title>한국어능력고사</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" href="../css/default.css">
-	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/qna.css">
-	<link rel="stylesheet" href="../css/animation.css">
-	<link rel="stylesheet" href="../css/result.css">
-	<script src="https://developers.kakao.com/sdk/js/kakao.js">
-	</script>
-	<script>
-		Kakao.init('4b78306c2806c638eb2beb5301da89ef');
-    Kakao.isInitialized();
-	</script>
+    <title>한국어능력고사</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/qna.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/result.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js">
+    </script>
+    <script>
+        Kakao.init('4b78306c2806c638eb2beb5301da89ef');
+        Kakao.isInitialized();
+    </script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7DMXD1KV1W">
-	</script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-7DMXD1KV1W');
-	</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DMXD1KV1W">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7DMXD1KV1W');
+    </script>
 </head>
 
 <body>
-	<section id="shareResult" class="resultfont mx-auto mt-5 mb-5 py-5 px-3" >
-		<div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
-			<img src="../img/test4.png" alt="0" class="img-fluid">
-      </div>
+    <section id="shareResult" class="resultfont mx-auto mt-5 mb-5 py-5 px-3">
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+            <img src="../img/test4.png" alt="0" class="img-fluid">
+        </div>
 
-      <button type="button" class="shareBtn mt-3 py-2 px-3" onclick="js:again()" >나도 해보기</button>
-      <button type="button" class="shareBtn mt-3 py-2 px-3" onclick="js:copy()" >링크 복사하기</button>
+        <button type="button" class="shareBtn mt-3 py-2 px-3" onclick="js:again()">나도 해보기</button>
+        <button type="button" class="shareBtn mt-3 py-2 px-3" onclick="js:copy()">링크 복사하기</button>
     </section>
-  <script src="../js/data.js" charset="UTF-8"></script>
-  <script src="../js/start.js" charset="UTF-8"></script>
-  <script src="../js/share.js" charset="UTF-8"></script>
-  </body>
+    <script src="../js/data.js" charset="UTF-8"></script>
+    <script src="../js/start.js" charset="UTF-8"></script>
+    <script src="../js/share.js" charset="UTF-8"></script>
+</body>
+
 </html>
