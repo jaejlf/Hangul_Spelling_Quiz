@@ -1,4 +1,4 @@
-const url = 'https://jaejlf.github.io/Hanguel-Spelling-Test/';
+const url = 'https://hanguel-spelling-test.github.io/';
 
 function setShare() {
   var resultImg = document.querySelector('#resultImg');

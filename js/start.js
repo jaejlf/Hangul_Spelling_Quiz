@@ -132,7 +132,7 @@ function begin() {
 }
 
 function again() {
-  location.href = "https://jaejlf.github.io/Hanguel-Spelling-Test/"; 
+  location.href = "https://hanguel-spelling-test.github.io/"; 
 }
 
 function copyToClipboard(val) {
@@ -145,7 +145,7 @@ function copyToClipboard(val) {
 }
 
 function copy() {
-  copyToClipboard('https://jaejlf.github.io/Hanguel-Spelling-Test/');
+  copyToClipboard('https://hanguel-spelling-test.github.io/');
   alert('링크가 복사되었습니다!');
 }
 
