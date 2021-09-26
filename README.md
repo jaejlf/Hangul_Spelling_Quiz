@@ -10,7 +10,7 @@
 @EUNDINI @VanesaK @Hansol-Jeong-93
 <br><br>
  
-## 🛠 사용기술
+## 🛠 활용 도구
 * #### 프론트엔드
   * Html
   * CSS
