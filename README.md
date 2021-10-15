@@ -2,10 +2,6 @@
 한글 맞춤법 퀴즈 반응형 웹사이트
 <br><br>
 
-## 🔗 배포url
-<https://hanguel-spelling-test.github.io/>
-<br><br>
-
 ## 👩‍💻 팀원
 @EUNDINI @VanesaK @Hansol-Jeong-93
 <br><br>
@@ -21,14 +17,6 @@
 ## 📑 기획
 - #### Inflearn 심리 테스트 제작 강의 내용을 바탕으로 ‘한글 맞춤법 퀴즈’ 반응형 웹사이트 제작
 - #### 총 20문제, 5단계의 결과지 제작
-
-  <details>
-  <summary>퀴즈 문제/결과 세부 내용</summary>
-  <div markdown="1">
-     (업로드 예정)
-  </div>
-  </details>
-
 - #### 주요 기능
   - 반응형 웹사이트
   - 20개 퀴즈를 통해 점수에 따라 1~5단계로 결과 분류
